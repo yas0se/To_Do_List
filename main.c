@@ -2,8 +2,6 @@
 #include <stdlib.h>
 #include "todo.h"
 
-#define MAX_TASKS 30
-#define MAX_TASK_NAME_LENGTH 50
 
 
 int main()
