@@ -17,7 +17,8 @@ int main()
     printf("1. Enter a task \n");
     printf("2. Mark Task as Completed \n");
     printf("3. List all tasks\n ");
-    printf("4. Exit\n");
+    printf("4. delete Task\n ");
+    printf("5. Exit\n");
     scanf("%d", choice);
     switch(choice) {
             case 1:
@@ -30,6 +31,9 @@ int main()
                 displayTasks();
                 break;
             case 4:
+                deleteTask();
+                break;
+            case 5:
                 printf("Au revoir!\n");
                 break;
             default:
