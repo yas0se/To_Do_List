@@ -54,3 +54,16 @@ void deleteTask() {
         printf("Indice de tache invalide.\n");
     }
 }
+
+void filterTasksByPriority(int priority) {
+    printf("Taches filtrées par priorité %d:\n", priority);
+    printf("-------------------------------------------------------------\n");
+    printf("Nom de la tache   | Priorite | Date d'echeance | Terminee\n");
+    printf("-------------------------------------------------------------\n");
+    for (int i = 0; i < numTasks; i++) {
+        if (tasks[i].priority == priority) {
+            printf("%-18s | %-8d | %-15s | %s\n", tasks[i].name, tasks[i].priority, tasks[i].deadline, tasks[i].completed ? "Oui" : "Non");
+        }
+    }
+    printf("-------------------------------------------------------------\n");
+}
