@@ -18,5 +18,6 @@ void displayTasks();
 void markTaskCompleted();
 void addTask();
 void deleteTask();
+void filterTasksByPriority(int priority);
 
 #endif // TODO_H_INCLUDED
