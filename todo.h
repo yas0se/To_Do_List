@@ -17,5 +17,6 @@ int numTasks = 0;
 void displayTasks();
 void markTaskCompleted();
 void addTask();
+void deleteTask();
 
 #endif // TODO_H_INCLUDED
