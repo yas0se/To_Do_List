@@ -39,3 +39,18 @@ void displayTasks() {
     }
     printf("-------------------------------------------------------------\n");
 }
+
+void deleteTask() {
+    int taskIndex;
+    printf("Entrez l'indice de la tache a supprimer : ");
+    scanf("%d", &taskIndex);
+    if (taskIndex >= 0 && taskIndex < numTasks) {
+        for (int i = taskIndex; i < numTasks - 1; i++) {
+            tasks[i] = tasks[i + 1];
+        }
+        numTasks--; 
+        printf("La tache a ete supprimee avec succes.\n");
+    } else {
+        printf("Indice de tache invalide.\n");
+    }
+}
